@@ -1,0 +1,36 @@
+plugins {
+    id 'application'
+    id 'org.beryx.jlink' version '3.0.1'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+testing {
+    suites {
+        test {
+            useJUnitJupiter('5.10.0')
+        }
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+        vendor = JvmVendorSpec.IBM
+    }
+}
+
+application {
+    mainClass = 'org.example.App'
+}
+
+jlink {
+    mergedModule {
+        requires 'java.rmi'
+    }
+}
