@@ -1,4 +1,4 @@
-# Demonstration of [openj9#19522](https://github.com/eclipse-openj9/openj9/issues/19522)
+# Demonstration of [Semeru-Runtimes#3](https://github.com/ibmruntimes/Semeru-Runtimes/issues/3)
 
 When executing `./gradlew jlinkZip` on macOS one gets
 
