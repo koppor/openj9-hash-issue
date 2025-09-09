@@ -1,6 +1,6 @@
 plugins {
     id 'application'
-    id 'org.beryx.jlink' version '3.0.1'
+    id 'org.beryx.jlink' version '3.1.2'
 }
 
 repositories {
@@ -12,7 +12,7 @@ dependencies {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(24)
         vendor = JvmVendorSpec.IBM
     }
 }
