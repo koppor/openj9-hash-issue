@@ -2,6 +2,8 @@ name: Build
 
 on:
   push:
+    branches:
+      main
   pull_request:
   workflow_dispatch:
 
@@ -25,7 +27,7 @@ jobs:
       - name: Setup JDK
         uses: actions/setup-java@v4
         with:
-          java-version: '24'
+          java-version: 25
           distribution: 'semeru'
           check-latest: true
       - name: Setup Gradle
